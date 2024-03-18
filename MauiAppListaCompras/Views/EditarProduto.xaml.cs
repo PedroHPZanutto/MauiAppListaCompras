@@ -24,7 +24,7 @@ public partial class EditarProduto : ContentPage
 				Preco = Convert.ToDouble(txt_preco.Text),
 			};
 			await App.Db.Update(p);
-			await DisplayAlert("Sucesso!", "Prdouto Editado!", "OK");
+			await DisplayAlert("Sucesso!", "Produto Editado!", "OK");
 		} catch (Exception ex)
 		{
 			await DisplayAlert("Ops", ex.Message, "Fechar");
